@@ -85,7 +85,7 @@ Currently, our framework uses a fighting game competition as an example. The det
 
 ## Contributing
 
-Feel free to dive in! [Open an issue](https://github.com/zhongqian97/SelfplayFrameWork/issues/new) or submit PRs.
+Feel free to dive in! [Open an issue](https://github.com/zhongqian97/TwoPlayerGameSelfPlayFramework/issues/new) or submit PRs.
 
 ### Contributors
 
