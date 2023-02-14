@@ -1,0 +1,10 @@
+setup.py
+myenv/__init__.py
+myenv.egg-info/PKG-INFO
+myenv.egg-info/SOURCES.txt
+myenv.egg-info/dependency_links.txt
+myenv.egg-info/requires.txt
+myenv.egg-info/top_level.txt
+myenv/envs/SelfplayAgent.py
+myenv/envs/fightingice_env.py
+myenv/envs/ppo_ai.py

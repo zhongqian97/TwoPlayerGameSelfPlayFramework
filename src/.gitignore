@@ -1,0 +1,10 @@
+log/*
+checkpoints/*
+checkpoints1/*
+selfplay/*
+temp/*
+data/aiData/ERHEA_PI_DJL/*
+*/__pycache__
+*.pyc
+.DS_Store
+0

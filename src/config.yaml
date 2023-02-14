@@ -1,0 +1,110 @@
+algorithm: PPG
+# 是否开启自博弈，不开启自博弈默认1个智能体学习对手池的最优反应
+if_open_selfplay: "True"
+# 同上
+fastmode: "True"
+# 任务模式下，是否开启训练完毕后测试，默认开启
+task_list_loop: "True"
+# "True"
+# worker_timeout: 10000
+# 端口号，每一个worker会分配一个
+port: 18000
+# worker并行环境数目
+env_num: 100
+# RL的衰减因子
+gamma: 0.9
+# 策略的Clip系数
+clip_ratio: 0.2
+# 辅助任务clip
+value_clip: 0.4
+# pi策略网络的学习率
+pi_lr: 0.0003
+# V网络的学习率
+vf_lr: 0.001
+# 最大策略网络迭代次数
+train_pi_iters: 80
+# 值函数网络迭代次数
+train_v_iters: 80
+# 辅助任务最大迭代次数
+train_aux_iters: 1
+# lamda值，计算advantage用的，GAE
+lam: 0.97
+# pi_loss entropy loss
+entropy: 1
+# kl散度阈值
+target_kl: 0.01
+# 每训练几步的保存次数
+save_freq: 1
+# 随机种子
+seed: 10000
+# ac网络隐藏层每层节点数
+ac_networks_number_per_layer: 64
+actor_hidden_dim: 64
+critic_hidden_dim: 64
+# PPG辅助任务
+num_policy_updates_per_aux: 15
+# ac网络隐藏层层数
+ac_networks_layer: 2
+# 最大训练回合数
+max_epochs: 600
+# 每次训练最大buffer_size
+steps_per_epoch: 10000
+# 每一个轨迹最长步数
+max_ep_len: 1000
+# 随机对手池中对战每一个对手所达到的胜率
+elo_winning_rate: 0.6
+# 对手池中对战所有对手的平均胜率
+avg_elo_winning_rate: 0
+# 不更新自博弈Agent的测试epoch间隔
+iterations_test: 200
+# 在自博弈前清空历史对手
+clean_buffer: "False"
+# 选择对手的模式
+select_opponent_mode: random
+# 角色
+character: ZEN
+# 测试回合
+test_round: 5
+test_epoch: 5
+# 训练智能体名称
+agents_name: ParallelPpgAINoSFEloTest0
+# 暂时存储位置
+file_path: "./temp/ParallelPpgAINoSFEloTest0_V64_WR60_WRA0/"
+# 指定的测试智能体
+test_agent_name: "ParallelPpgAINoSFEloTest07"
+# 自博弈智能体存储位置
+agent_file_path: "./checkpoints/"
+# agent_file_path: "./temp/ParallelPpgAINoSFEloTest0_V64_WR85/"
+selfplay_file_path: "./selfplay/"
+fighting_data_csv:
+ - epoch
+ - character
+ - p1
+ - p2
+ - p1_hp
+ - p2_hp
+ - isWin
+ - frame
+ - length
+ - return
+opp_ai_list:
+ - "TeraThunder"
+ - "CYR_AI"
+ - "BCP"
+ - "JayBot_GM"
+ - "EmcmAi"
+ - "DiceAI"
+ - "KotlinTestAgent"
+ - "Dora"
+ - "LGIST_Bot"
+ - "Toothless"
+ - "FalzAI"
+ - "ReiwaThunder"
+ - "TOVOR"
+ - "HaibuAI"
+ - "MctsAi"
+ - "UtalFighter"
+opp_ai_list_for_test: 
+ - "Thunder2021"
+ - "BlackMamba"
+ - "ERHEA_PI_DJL"

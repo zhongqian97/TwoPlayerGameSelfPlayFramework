@@ -1,0 +1,56 @@
+port: 11000
+env_num: 50
+gamma: 0.9
+clip_ratio: 0.2
+pi_lr: 0.0003
+vf_lr: 0.001
+train_pi_iters: 80
+train_v_iters: 80
+lam: 0.97
+target_kl: 0.01
+save_freq: 1
+seed: 10000
+ac_networks_number_per_layer: 64
+ac_networks_layer: 2
+max_epochs: 400
+steps_per_epoch: 10000
+max_ep_len: 1000
+elo_score: 0
+character: ZEN
+test_round: 10
+agents_name: MultiParallelPpoAITest0
+file_path: "./checkpoints/"
+agent_file_path: "./checkpoints/"
+test_agent_name: "MultiParallelPpoAITest01"
+fighting_data_csv:
+ - epoch
+ - character
+ - p1
+ - p2
+ - p1_hp
+ - p2_hp
+ - isWin
+ - frame
+ - length
+ - return
+opp_ai_list:
+ - "TeraThunder"
+ - "CYR_AI"
+ - "BCP"
+ - "JayBot_GM"
+ - "EmcmAi"
+ - "DiceAI"
+ - "KotlinTestAgent"
+ - "Dora"
+ - "LGIST_Bot"
+ - "Toothless"
+ - "FalzAI"
+ - "ReiwaThunder"
+ - "TOVOR"
+ - "HaibuAI"
+ - "MctsAi"
+ - "UtalFighter"
+opp_ai_list_for_test: 
+ - "Thunder2021"
+ - "BlackMamba"
+ - "ERHEA_PI_DJL"
