@@ -14,17 +14,17 @@ This repository contains:
 - [Contributing](#contributing)
 - [License](#license)
 
-## install
+## Install
 This project can be installed on a single machine or in a multi-machine setup.
 
-### on a single machine
+### On a single machine
 ```bash
 $ cd src
 $ bash ./install_env/install_env.sh
 $ bash ./install_env/install_env_py.sh
 ```
 
-### in a multi-machine
+### In a multi-machine
 0. Bind SSH Key to each machine.
 1. Set the IP address and port number of each machine in this file. `./src/parallel_scripts/SSH`
 2. Run this script.
@@ -81,7 +81,7 @@ Currently, our framework uses a fighting game competition as an example. The det
 
 ## Maintainers
 
-[@Rongqin Liang](https://github.com/zhongqian97/), [@ChatGPT](https://chat.openai.com/)
+[@Rongqin Liang](https://github.com/zhongqian97/)
 
 ## Contributing
 
