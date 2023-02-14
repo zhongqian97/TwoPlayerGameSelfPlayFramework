@@ -75,8 +75,9 @@ The current framework operates in two modes: the 'Standalone' mode and the 'Task
 Currently, our framework uses a fighting game competition as an example. The details of this fighting game competition can be found in the provided [link](http://www.ice.ci.ritsumei.ac.jp/~ftgaic/). We have utilized previous year's participants as intelligent agents and have completed the configuration of the Config file. Upon completion of installation, the fighting game example can be immediately employed. A selection of several artificial intelligence entities that were trained in a pool of opponents was chosen, and the results of the training are depicted as shown in the figure. The results, as depicted in the figure, demonstrate that the newly trained AI agent outperforms its opponents in the pool, as indicated by the victory rate shown on the vertical axis when tested against each opponent in the pool, as identified by their respective names on the horizontal axis. The incremental increase in the number of intelligent entities in the self-growing opponent pool demonstrates that the newly trained intelligent entity has acquired strategies that surpass those of previous intelligent entities, as evidenced by its ability to defeat the latter.
 
 ### Agent Demonstration
+- P2 is our agent.
 ![pic2](img/1.gif)
-
+- video
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/GmQ4M02QOEU/0.jpg)](https://www.youtube.com/watch?v=GmQ4M02QOEU)
 
 ## Maintainers
